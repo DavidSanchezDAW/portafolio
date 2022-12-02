@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: hsl(151, 32%, 27%);
+  color: rgb(255, 255, 255);
+  width: 100vw;
+}
+header {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.index > *{
+  align-self: flex-start;
+}
+header h2 {
+  margin: 0 auto;
+  padding: 0.2em;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+.col50 {
+  width: 50%;
+  padding: 10px;
+}
+.right {
+  text-align: right;
+}
+.lista {
+  display: flex;
+}
+section {
+  margin: 2em;
+  width: 100%;
+}
+.intro {
+  justify-content: center;
+}
+.center {
+  align-items: center;
+  text-align: center;
+  width: 40vw;
+  display: flex;
+}
+.projects {
+  margin: 2em;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.projects img{
+  width:8em;
+  height:8em;
+  margin:.2em;
+  transition: 0.5s;
+}
+.projects img:hover{
+  transform: scale(1.2);
+  transform: skew(10deg, 10deg);
+}
+
+.effect::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.effect:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.effect::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgb(111, 27, 27);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+
+.effect {
+  position: relative;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+
