@@ -74,7 +74,6 @@ section {
 }
 .projects img:hover{
   transform: scale(1.2);
-  transform: skew(10deg, 10deg);
 }
 
 .effect::before {  
@@ -111,5 +110,12 @@ html {
   block-size: 100%;
   inline-size: 100%;
 }
-
+canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  opacity: 40%;
+}
 
